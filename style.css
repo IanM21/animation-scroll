@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background-color: #131316;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+/* Pictures */
+.pics {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img {
+    height: 200px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+img.landscape {
+    width: auto;
+    max-height: 200px;
+}
+
+  
+.pic-hidden {
+    flex-basis: calc(25% - 20px);
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.pic:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.pic:nth-child(3) {
+    transition-delay: 400ms;
+}
+
+.pic:nth-child(4) {
+    transition-delay: 600ms;
+}
+
+/* Songs */
+.songs {
+    display: flex;
+    justify-content: space-between;
+}
+
+iframe {
+    border-radius: 12px;
+    height: 152px;
+    width: 70%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.song:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.song:nth-child(3) {
+    transition-delay: 400ms;
+}
+
+.song:nth-child(4) {
+    transition-delay: 600ms;
+}
